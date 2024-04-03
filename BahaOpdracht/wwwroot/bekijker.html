@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="assets/css/index.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Carepay</title>
+    </head>
+    <body>
+        <div class="eventlist">
+            <h1>Kies uw uitje</h1>
+            <th>Uitjes</th>
+            <select id="selectEvent"></select>
+            <button id="deleteBtn">Verwijder</button>
+            <button id="viewBtn">Bekijk</button>
+
+            <h1>Maak uw uitje aan</h1>
+            <p>Hoe heet het uitje?</p>
+            <input type="text" id="descriptionInput" placeholder="Vul in">
+            <p>Kies de datum</p>
+            <input type="date" id="dateInput">
+            <button id="saveKnop">Save</button>
+            
+    </div>
+        </div>
+   
+<div class="divform" id="Balance" style="display: none;">
+
+    <button id="editbtn">Bewerk uitje</button>
+    <div id="history">
+    <h1>Geschiedenis</h1>
+</div>
+</div>
+        <div class="divform" id="editForm" style="display: none;">
+            <button type="submit" id="balanceBtn">Bekijk Geschiedenis</button>
+            <div id="event-container"></div>
+            <button id="editName">Edit name</button>
+            <p>Wat heb je betaald?</p>
+            <input type="text" id="receiptInput" placeholder="Voer in" />
+            <p>Voer je bedrag in</p>
+            <input type="number" id="paymentInput" placeholder="Bedrag" />
+            <button type="button" id="addPayment">Betaal</button>
+            <p>Voeg iemand toe</p>
+            <input type="email" id="newPart" placeholder="Vul emailadres in" />
+            <button type="button" id="partAdd">Voeg toe</button>
+            <label>Deelnemers</label>
+            <div id="name-container"></div>
+        </div>
+
+        <div class="divform" style="display: none" id="history">
+            <button type="submit" id="backbtn">Ga terug</button>
+            <h1>Geschiedenis</h1>
+        </div>
+    </body>
+    <script src="/src/view.ts" type="module"></script>
+</html>

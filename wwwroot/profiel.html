@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/assets/css/index.css" />
+        <title>User Data App</title>
+    </head>
+    <body>
+        <nav>
+            <a href="/"><button>Home</button></a>
+            <div class='rightNav'><button id='DM'>Berichten</button><div class='dropdown'><button class='dropbtn'>Profiel</button><div class='dropdown-content'><a href='profiel.html'><button id='Profile'>Gegevens</button></a><button id='logoutButton'>Logout</button></div></div></div>
+        </nav>
+            <div id="userData">
+                <h2>Dit zijn jouw gegevens:</h2>
+                <button type="submit" id="editPF">Pas aan</button>
+                    <p class="firstname"></p>
+                    <p class="lastname"></p>
+                    <p class="email"></p>
+                    <p class="username"></p>
+            </div>
+            <div id="editUserData" style="display: none;">
+                <h2>Verander profiel gegevens</h2>
+                <button type="submit" id="backPF">Terug</button>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstnameInput" required />
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastnameInput" required />
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="usernameInput" required />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="emailInput" required />
+
+                    <button type="submit" id="profielWijzigen">Profiel wijzigen</button>
+            </div>
+            <h1 >Jouw Posts</h1>
+            <div class="ProfielBlok"></div>
+        </div>
+        <script src="/src/profiel.ts" type="module"></script>
+        
+    </body>
+</html>

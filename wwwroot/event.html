@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Uitje Aanmaken</title>
+        <link rel="stylesheet" href="/assets/css/index.css" />
+    </head>
+    <header>
+        <a href="/"><img src="./assets/images/logo.png" width="50" /></a>
+        <a href="faq.html"><button class="button-nav">FAQ</button></a>
+        <a href="viewer.html"><button class="button-nav">Bekijker</button></a>
+        <a href="event.html"><button class="button-nav active">Uitje</button></a>
+        <a href="register.html"><button class="button-nav">Account aanmaken</button></a>
+    </header>
+
+    <body>
+        <div class="divform">
+        <h3>Hoe heet het uitje?</h3>
+        <input type="text" id="textInput" placeholder="Vul in">
+        <input type="date" id="dateInput">
+        <button id="saveKnop">Save</button>
+        <h3>Voer een email in</h3>
+        <input type="text" id="emailInput" placeholder="Email">
+        <h3>Welke uitje wordt het?</h3>
+        <input type="text" placeholder="Event" id="eventInput">
+        <button type="submit" id="eventbtn">Eventbutton</button>
+</div>
+    <table id="eventTable">
+        <h3>Bestaande uitjes</h3>
+        <thead>
+            <tr>
+                <th>Beschrijving</th>
+                <th>Datum</th>
+            </tr>
+        </thead>
+        <tbody id="eventtablebody">
+        </tbody>
+    </table>
+    </body>
+    <script type="module" src="/src/javascript.js"></script>
+</html>
